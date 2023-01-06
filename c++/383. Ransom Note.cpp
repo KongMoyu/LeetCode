@@ -10,11 +10,11 @@ class Solution {
             }
         
             for(int i=0;i<ransomNote.size();i++){
-                if(map[ransomNote[i]] >0){
-                    map[ransomNote[i]]--;
+                if(map[ransomNote[i]] >0){ // check if map has at least one ransomNote[i] letter
+                    map[ransomNote[i]]--; // if yes, delete that letter's amount value
                 }
                 else{
-                    return false;
+                    return false; // if = 0, return false
                 }
             }
         return true;
